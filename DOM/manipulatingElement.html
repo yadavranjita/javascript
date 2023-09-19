@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript HTML Events</h2>
+    <p id="myStyle">Click the button to display the date.</p>
+    <p id="mycolor">Paragraph</p>
+    <button onclick="displayDate()">The time is?</button>
+    <p id = "demo"></p>
+    <button id ="clickme">Click Me</button>
+    <button onclick="clicks()">Click Me Also</button>
+    <div class="parent">
+        <p id="child1">child1</p>
+        <p id="child2">child2</p>
+    </div>
+    <script>
+        //button click by onclick 
+        function displayDate(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+        //button click by addEventListener
+        const buttonElement = document.querySelector('#clickme');
+        buttonElement.addEventListener("click", function(){
+            alert("Button Clicked!");
+        });
+        //button click by onclick and alert
+        function clicks(){
+            alert("Button is clicked!");
+        }
+
+        //changing css properties of p element by querySelector
+        const paragraphElement = document.querySelector("#myStyle");
+        paragraphElement.style.color = "red";
+        paragraphElement.style.backgroundColor = "black";
+        paragraphElement.style.fontSize = "20px";
+
+        //changing css properties of p element by getElementById
+        const mycolorElem = document.getElementById("mycolor");
+        mycolorElem.style.color = "red";
+
+        //remove the element from the parent
+        const parentElem = document.querySelector(".parent");
+        const childElem = document.querySelector("#child1");
+        parentElem.removeChild(childElem);
+        //remove the parent
+        const parentElem1 = document.querySelector(".parent");
+        parentElem1.remove();
+
+
+       
+    </script>
+</body>
+</html>

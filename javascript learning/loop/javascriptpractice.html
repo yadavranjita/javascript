@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../javascript learning/javascriptpractice.js">
+</head>
+<body>
+    <script>
+
+        console.log("bmi");  
+        let weight = prompt("Enter your weight in kg");
+        let h = 5;
+        let height=h*0.3048;
+        let bmi=weight/(height*height);
+        console.log(bmi);
+        if(bmi <= 18.4){
+            console.log(`Your BMI is ${bmi}, so you are underweight`);
+        }
+        else if(bmi > 18.5 && bmi < 24.9){
+            console.log("Normal");
+        }
+        else if(bmi > 25.0 && bmi < 39.9){
+            console.log("Overweight");
+        }
+        else if(bmi >= 40.0){
+            console.log("Obese");
+        }
+        else{
+            console.log("Typing Error");
+        }
+
+        
+    </script>
+</body>
+</html>

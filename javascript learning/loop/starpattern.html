@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../javascript learning/starpattern.js">
+</head>
+<body>
+    <script>
+        console.log("Star pattern");
+
+        console.log("1. left triangle pattern");
+        for (let i = 1; i <= 5; i++) {
+            let row = "";
+            for(let j = 1; j <= i; j++){
+                row = row + "*";
+            }
+            console.log(row);
+        }
+        
+
+        console.log("2. right triangle pattern");
+        for (let i = 5; i >= 1; i--) {
+            let row = "";
+            for(let j = 1; j < i; j++){
+                row = row + " ";
+            }
+            for(let k = 5; k >= i; k--){
+                row = row + "*";
+            }
+            console.log(row);
+        }
+
+        console.log("3. pyramid pattern");
+        for (let i = 1; i <= 5; i++) {
+            let row = "";
+            for(let j = 1; j <= (5-i); j++){
+                row = row + " ";
+            }
+            for(let k = 1; k <= (2*i)-1; k++){
+                row = row + "*";
+            }
+            console.log(row);
+        }
+
+        console.log("4. reverse pyramid pattern");
+        let num = 5;
+        for (let i = 0; i < num; i++) {
+            let row = "";
+            for (let j = 0; j < i; j++) {
+                row = row + " ";
+            }
+            for (let k = 0; k < 2 * (num-i) - 1; k++) {
+                row = row + "*";
+            }
+            console.log(row);
+        }
+
+
+
+        console.log("5. rectangle pattern");
+        let n = 5, string = ""
+        for (let i = 1; i < n; i++) {
+            for (let j = 0; j < 10; j++) {
+                string += "*";
+            }
+            string += "\n";
+        }
+        console.log(string);
+
+
+
+
+       
+        
+        
+
+        
+        
+
+
+    </script>
+</body>
+</html>

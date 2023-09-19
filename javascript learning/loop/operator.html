@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../javascript learning/oprator.js">
+</head>
+<body>
+    <script>
+
+        d=5;
+        console.log(typeof(d));
+
+        name="Ranjita";
+        console.log(typeof(name));
+
+        let num1= 5;
+        let num2= 1;
+        let result= num1 & num2;
+        console.log(result);
+
+        let num3= 5;
+        let num4= 1;
+        let result1= num3 | num4;
+        console.log(result1);
+
+        let age = 18;
+        if (age >= 18) {
+            console.log("You are an adult.");
+        } else {
+            console.log("You are a minor.");
+        }
+
+        let mark = 50;
+        if (mark >= 40){
+            console.log("Pass");
+        } else{
+            console.log("Fail");
+        }
+
+        //multiple condition
+
+        let marks = 40;
+        if (marks >= 40 && marks <= 50){
+            console.log("Pass");
+        }
+        else if(marks > 50 && marks <= 60){
+            console.log("Second Division");
+        }
+        else if(marks > 60 && marks <= 70){
+            console.log("First Division");
+        }
+        else if(marks > 70 && marks <= 100){
+            console.log("Distinction");
+        }
+        else{
+            console.log("Fail");
+        }
+
+        //or
+        let day;
+        if(day == 7 || day == 1) {
+            console.log("Today is holiday");
+        }
+        else{
+            console.log("Today is working day");
+        }
+
+        let number = 1;
+        if(number > 0){
+            console.log("Positive");
+        }
+        else if(number < 0){
+            console.log("Negative");
+        }
+        else{
+            console.log("Zero");
+        }
+        
+        let days = "Monday";
+        switch (days) {
+            case "Monday":
+                console.log("It's Monday.");
+                break;
+            case "Tuesday":
+                console.log("It's Tuesday.");
+                break;
+            case "Wednesday":
+                console.log("It's Wednesday.");
+                break;
+            case "Thrusday":
+                console.log("It's Thrusday.");
+                break;
+            case "Friday":
+                console.log("It's Friday.");
+                break;
+            case "Saturday":
+                console.log("It's Saturday.");
+                break;
+            case "Sunday":
+                console.log("It's Sunday.");
+                break;
+            default:
+                console.log("You are not entering correct day.");
+                break;
+        }
+
+        let month=1;
+        switch (month) {
+            case 1:
+                console.log("It has 31 days.");
+                break;
+            case 2:
+                console.log("It has 28 days.");
+                break;
+            case 3:
+                console.log("It has 31 days.");
+                break;
+            case 4:
+                console.log("It has 30 days.");
+                break;
+            case 5:
+                console.log("It has 31 days.");
+                break;
+            case 6:
+                console.log("It has 30 days.");
+                break;
+            case 7:
+                console.log("It has 31 days.");
+                break;
+            case 8:
+                console.log("It has 30 days.");
+                break;
+            case 9:
+                console.log("It has 31 days.");
+                break;
+            case 10:
+                console.log("It has 30 days.");
+                break;
+            case 11:
+                console.log("It has 31 days.");
+                break;
+            case 12:
+                console.log("It has 30 days.");
+                break;
+            default:
+                console.log("Typing Error.");
+                break;
+        }
+
+       
+
+
+    </script>
+    
+</body>
+</html>
